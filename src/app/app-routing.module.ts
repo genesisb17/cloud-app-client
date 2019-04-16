@@ -4,9 +4,9 @@ import { HomeComponent } from './components/home/home.component';
 import { S3Component } from './components/s3/s3.component';
 
 const routes: Routes = [
+  { path: '**', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 's3', component: S3Component},
-  { path: '**', redirectTo: '/home', pathMatch: 'full'}
 ];
 
 @NgModule({
